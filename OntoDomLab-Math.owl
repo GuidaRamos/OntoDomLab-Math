@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/OntoDomLab-Math"
+     xml:base="http://www.semanticweb.org/OntoDomLab-Math"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:skos-xl="http://www.w3.org/2008/05/skos-xl#"
+     xmlns:math-scs="http://www.semanticweb.org/Math-Scs#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/OntoDomLab-Math">
+        <owl:imports rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
+        <rdfs:comment xml:lang="en">OntoDomLab-Math is an ontology of domain labels focused on MATHEMATICS and corresponding sub-domains.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#branchOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/OntoDomLab-Math#branchOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#hasBranch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#hasBranch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/OntoDomLab-Math#hasBranch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#Arithmetic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Arithmetic">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Subdomain"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#branchOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#Mathematics"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#Geometry"/>
+        <rdfs:comment xml:lang="en">Arithmetic</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#FieldOfScience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#FieldOfScience"/>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Geometry">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Subdomain"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#branchOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#Mathematics"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Geometry</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#MathematicalSciences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#MathematicalSciences">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#FieldOfScience"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Superdomain"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#hasBranch"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#Mathematics"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Mathematical sciences</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#Mathematics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Mathematics">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Domain"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#branchOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#MathematicalSciences"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#hasBranch"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#Arithmetic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#hasBranch"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/OntoDomLab-Math#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Mathematics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#Subdomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Subdomain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/OntoDomLab-Math#Superdomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Superdomain"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Domain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Subdomain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/OntoDomLab-Math#Superdomain"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
