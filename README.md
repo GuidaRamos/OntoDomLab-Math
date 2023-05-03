@@ -1,8 +1,5 @@
 # OntoDomLab-Math
-OntoDomLab-Math is an ontology of domain labels focused on MATHEMATICS and corresponding sub-domains. It has been developed within the framework of the 
-collaboration of [NOVA CLUNL](https://clunl.fcsh.unl.pt) in the transition of the Dicionário da Língua Portuguesa 
-Contemporânea (DLPC) from the [Academia das Ciências de Lisboa](http://www.acad-ciencias.pt/) into a digital version. 
-Its purpose is to provide a solid conceptual foundation that facilitates interoperability with TEI Lex-0, as well as improve: 
+OntoDomLab-Math is an ontology of domain labels focused on MATHEMATICS and corresponding sub-domains. It has been developed at NOVA CLUNL within the framework of the project [MORDigital – Digitisation of Diccionario da Lingua Portugueza by António de Morais Silva (PTDC/LLT-LIN/6841/2020)](https://mordigital.fcsh.unl.pt/en/about/). Its purpose is to provide a solid conceptual foundation that facilitates interoperability with TEI Lex-0, as well as improve: 
 i) the consistency of domain labelling assignment and ii) the efficiency in what concerns information retrieval.
 
 OntoDomLab-Math is being developed in OWL.
