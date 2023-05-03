@@ -15,10 +15,6 @@ project 2Ai – School of Technology, IPCA – UIDB/05549/2020.
 - Costa, Rute / Salgado, Ana / Kahn, Fahad / Ramos, Margarida /Carvalho, Sara / Tasovac, Toma / Almeida, Bruno/ Khemakhem, Mohamed /Romary, Laurent / Silva, Raquel (2022). "A crossroad between lexicography and terminology work: knowledge organisation and domain labelling" (forthcoming).
 Paper presented at the 1st International Conference on [Multilingual digital terminology today. Design, representation formats and management systems (MDTT22)](http://www.maldura.unipd.it/digital-terminology/en/), Università degli Studi di Padova. June 16 – 17, Padova, Italy. [peer reviewed]. 
 
-- Costa, Rute / Carvalho, Sara / Salgado, Ana / Simões, Alberto / Tasovac, Toma (2020), [“ Ontologie des marques de domaines 
-appliquée aux dictionnaires de langue générale”](https://www.calameo.com/read/0038662368a28c0171ff4), in [editeur : Xavier Blanco] La lexicographie en tant que méthodologie de 
-recherche en linguistique. Revue de Philologie Française et Romane - Langue(s) & Parole, n.5.
-
 - Salgado, Ana / Costa, Rute / Tasovac, Toma (2019). “Improving the consistency of usage labelling in dictionaries with TEI Lex-
 0”. Lexicography, Journal of ASIALEX, Berlin: Springer Verlag. ISSN: 2197-4292 (print)| 2197-4306, pp. 133-156, DOI 
 10.1007/s40607-019-00061-x.
