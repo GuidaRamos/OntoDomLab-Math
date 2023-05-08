@@ -3,6 +3,8 @@ OntoDomLab-Math is a domain label ontology focused on MATHEMATICS and its subdom
 
 OntoDomLab-Math is being developed in OWL.
 
+![OntoGraph](https://mordigital.fcsh.unl.pt/wp-content/uploads/OntoGraf-VF2.png)
+
 # Acknowledgements
 Research financed by Portuguese National Funding through the FCT – Fundação para a Ciência e Tecnologia as part of the 
 project Centro de Linguística da Universidade NOVA de Lisboa – UID/LIN/03213/2020, by the European Union’s Horizon 2020 
